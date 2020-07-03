@@ -24,31 +24,115 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="./dist/styles.css?cb=1593762158443" />
   </head>
+
   <body>
-    <main>
-      <section class="content">
-        <h1>Front-end Boilerplate</h1>
-        <h2>Using Sass and Gulp</h2>
+    <header class="site-header">
+      <div class="site-header__quick-contacts">
+        <div class="site-header__reachout">
+          <span
+            ><img src="./dist/images/phone.png" alt="phone" /> 1-333-4896</span
+          >
+          <span
+            ><img src="./dist/images/mail.png" alt="mail" />
+            info@insalvo.com</span
+          >
+        </div>
+        <div class="site-header__social">
+          <span
+            >Follow us
+            <a href="#">
+              <img src="./dist/images/twitter.png" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="./dist/images/fb.png" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="./dist/images/linkedin.png" alt="linkedin" />
+            </a>
+          </span>
+        </div>
+      </div>
 
-        <p>
-          Here's a quick set-up guide:
-        </p>
+      <div class="site-header__main">
+        <div class="site-header__branding">
+          <a href="#" class="site-header__logo">
+            <img src="./dist/images/logo.png" alt="company logo" />
+          </a>
+        </div>
 
-        <ul>
-          <li>Clone Git repo</li>
-          <li>Install by running "npm install" on the commmand line</li>
-          <li>Run "gulp" on the command line.</li>
-        </ul>
-      </section>
+        <div class="site-header__hamburger">
+          <a href="#" class="hamburger">
+            <span class="hamburger__line l1"></span>
+            <span class="hamburger__line l2"></span>
+            <span class="hamburger__line l3"></span>
+          </a>
+        </div>
 
-      <aside>
-        <h3>Project Info</h3>
-        <p>
-          This is a starter front-end project which will compile SCSS and JS
-          files using Gulp 4.
-        </p>
-      </aside>
-    </main>
+        <div class="site-header__nav">
+          <nav class="site-nav" id="site-nav">
+            <ul id="nav-menu" class="site-nav__list">
+              <li class="menu-item i1"><a href="#">Start</a></li>
+              <li class="menu-item i2"><a href="#">Dienstleistungen</a></li>
+              <li class="menu-item i3"><a href="#">Über uns</a></li>
+              <li class="menu-item i4"><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="content" class="site-content">
+      <main id="main" class="site-main">
+        <div class="intro-block"></div>
+        <div class="our-services-block"></div>
+        <div class="our-story-block"></div>
+        <div class="testimonials-block"></div>
+        <div class="clients-block"></div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__content">
+        <div class="site-footer__social">
+          <a href="#" class="site-footer__logo">
+            <img src="./dist/images/logo.png" alt="company logo" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia
+            dicta veniam eos suscipit molestias tempore possimus quasi assumenda
+            eveniet aliquam quo sunt natus architecto quis quos, perferendis
+            earum nisi.
+          </p>
+          <div class="site-footer__social-icons">
+            <a href="#" class="site-footer__social-icon facebook"></a>
+            <a href="#" class="site-footer__social-icon twitter"></a>
+            <a href="#" class="site-footer__social-icon pintrest"></a>
+          </div>
+        </div>
+
+        <div class="site-footer__links">
+          <h4 class="site-footer__label">more links</h4>
+          <ul>
+            <li><a href="#" class="site-footer__links">Home</a></li>
+            <li><a href="#" class="site-footer__links">About Us</a></li>
+            <li><a href="#" class="site-footer__links">Our Services</a></li>
+            <li><a href="#" class="site-footer__links">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__address">
+          <h4 class="site-footer__label">Our Address</h4>
+          <ul>
+            <li>Insolvo-Consulting</li>
+            <li class="site-footer__house">Weissensteinstrasse 26</li>
+            <li>3008 Bern</li>
+            <li class="site-footer__phone">Tel: 076 409 91 91</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__copyright">
+        <span>&#169; Copyright Insolvo Consulting. All rights reserved</span>
+      </div>
+    </footer>
 
     <!-- JavaScript File -->
     <script src="./dist/all.js?cb=1593762158443"></script>
