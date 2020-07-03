@@ -1,0 +1,37 @@
+$gold: #af943e;
+$blue-baby: #5ed9e7;
+
+$white: #fff;
+$grey-light: #f6f6f6;
+$grey: #888888;
+$grey-dark: #666666;
+$black-mat: #333333;
+$black: #000000;
+
+$screen-padding-xs: 0 1em;
+$screen-padding-sm: 0 3em;
+$screen-padding-xlg: 0 calc((100vw - 1200px) / 2);
+
+@mixin sm-screen {
+  @media (min-width: 420px) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media (min-width: 850px) {
+    @content;
+  }
+}
+
+@mixin xlg-screen {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
