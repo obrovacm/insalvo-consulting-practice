@@ -1,0 +1,88 @@
+.site-header {
+  /*
+  ** Quick contacts section 
+  */
+  &__quick-contacts {
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin: 0 auto;
+    @include responsive-padding;
+  }
+
+  &__reachout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+  ** Main header section 
+  */
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    @include responsive-padding;
+  }
+
+  /*
+  ** Hamburger 
+  */
+  &__hamburger {
+    .hamburger {
+      position: relative;
+      cursor: pointer;
+      height: 20px;
+      width: 35px;
+      &__line {
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background-color: $black;
+        transform-origin: center;
+        transition: transform 300ms, opacity 200ms;
+      }
+      .l1 {
+        top: 0;
+      }
+      .l2 {
+        top: 8px;
+      }
+      .l3 {
+        top: 16px;
+      }
+      &.on {
+        .l1 {
+          transform: translateY(8px) rotate(40deg);
+        }
+        .l2 {
+          opacity: 0;
+        }
+        .l3 {
+          transform: translateY(-8px) rotate(-40deg);
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    // big screen--- display: flex;
+    .site-nav {
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,1 +1,1 @@
-console.log("src/js/script.js - RADI");
+console.log("src/js/script.js - RADI");var hamburger=$("#hamburger");hamburger.on("click",function(r){hamburger.toggleClass("on")});

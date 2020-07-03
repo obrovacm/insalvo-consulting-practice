@@ -1,0 +1,7 @@
+.site-footer{
+
+  &__content{
+
+    @include responsive-padding;
+  }
+}

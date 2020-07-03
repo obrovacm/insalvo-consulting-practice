@@ -24,14 +24,28 @@ $screen-padding-xlg: 0 calc((100vw - 1200px) / 2);
   }
 }
 
+// @mixin lg-screen {
+//   @media (min-width: 850px) {
+//     @content;
+//   }
+// }
+
 @mixin lg-screen {
-  @media (min-width: 850px) {
+  @media (min-width: calc(1096px + 1em)) {
     @content;
   }
 }
 
-@mixin xlg-screen {
-  @media (min-width: 1300px) {
-    @content;
+@mixin responsive-width {
+  @include lg-screen{
+    width: 1096px;
   }
+
+  
+}
+@mixin responsive-padding {
+  padding-left: 1em;
+  padding-right: 1em;
+  
+  
 }
