@@ -17,12 +17,12 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
     />
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="./dist/styles.css?cb=1593762158443" />
+    <link rel="stylesheet" href="./dist/styles.css?cb=1593852340819" />
 
     <!-- jQuery -->
     <script src="./dist/jquery.js"></script>
@@ -102,9 +102,11 @@
     <footer class="site-footer">
       <div class="site-footer__content">
         <div class="site-footer__social">
-          <a href="#" class="site-footer__logo">
-            <img src="./dist/images/logo.png" alt="company logo" />
-          </a>
+          <div class="site-footer__logo-wrapper">
+            <a href="#" class="site-footer__logo">
+              <img src="./dist/images/logo-white.png" alt="company logo" />
+            </a>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia
             dicta veniam eos suscipit molestias tempore possimus quasi assumenda
@@ -112,14 +114,26 @@
             earum nisi.
           </p>
           <div class="site-footer__social-icons">
-            <a href="#" class="site-footer__social-icon facebook"></a>
-            <a href="#" class="site-footer__social-icon twitter"></a>
-            <a href="#" class="site-footer__social-icon pintrest"></a>
+            <a href="#" class="site-footer__social-icon facebook">
+              <div class="site-footer__social-icon-wrapper">
+                <img src="/dist/images/fb.png" alt="facebook icon" />
+              </div>
+            </a>
+            <a href="#" class="site-footer__social-icon twitter">
+              <div class="site-footer__social-icon-wrapper">
+                <img src="/dist/images/twitter.png" alt="twitter icon" />
+              </div>
+            </a>
+            <a href="#" class="site-footer__social-icon pintrest">
+              <div class="site-footer__social-icon-wrapper">
+                <img src="/dist/images/pintrest.png" alt="pintrest icon" />
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="site-footer__links">
-          <h4 class="site-footer__label">more links</h4>
+          <h4 class="site-footer__header underline left">more links</h4>
           <ul>
             <li><a href="#" class="site-footer__links">Home</a></li>
             <li><a href="#" class="site-footer__links">About Us</a></li>
@@ -128,21 +142,22 @@
           </ul>
         </div>
         <div class="site-footer__address">
-          <h4 class="site-footer__label">Our Address</h4>
+          <h4 class="site-footer__header underline left">Our Address</h4>
           <ul>
             <li>Insolvo-Consulting</li>
-            <li class="site-footer__house">Weissensteinstrasse 26</li>
+            <li class="address__house">Weissensteinstrasse 26</li>
             <li>3008 Bern</li>
-            <li class="site-footer__phone">Tel: 076 409 91 91</li>
+            <li class="address__phone">Tel: 076 409 91 91</li>
           </ul>
         </div>
       </div>
-      <div class="site-footer__copyright">
+
+      <div class="site-footer__copyrights">
         <span>&#169; Copyright Insolvo Consulting. All rights reserved</span>
       </div>
     </footer>
 
     <!-- JavaScript File -->
-    <script src="./dist/all.js?cb=1593762158443"></script>
+    <script src="./dist/all.js?cb=1593852340819"></script>
   </body>
 </html>
