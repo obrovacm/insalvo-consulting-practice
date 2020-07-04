@@ -1,5 +1,7 @@
 .underline {
   position: relative;
+  text-transform: uppercase;
+  margin-bottom: 54px;
   &::after {
     content: "";
     position: absolute;
@@ -11,8 +13,26 @@
   &.left::after {
     left: 0;
   }
-  &.center::after {
-    left: 50%;
-    transform: translateX(-50%);
+  &.center {
+    text-align: center;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: $gold;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  &:active{
+    outline: solid;
   }
 }
