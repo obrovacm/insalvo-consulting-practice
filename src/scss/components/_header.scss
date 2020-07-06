@@ -1,4 +1,6 @@
 .site-header {
+  position: relative;
+
   /*
   ** Quick contacts section 
   */
@@ -16,6 +18,9 @@
   &__reachout {
     display: flex;
     flex-direction: column;
+    img {
+      margin-right: 12px;
+    }
   }
 
   &__social {
@@ -24,7 +29,7 @@
     justify-content: right;
     span {
       text-align: right;
-      
+
       &:nth-child(2) {
         display: flex;
         justify-self: right;
@@ -95,15 +100,36 @@
   }
 
   &__nav {
-    display: none;
+    position: absolute;
+    background-color: $white;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    padding: 1em;
+    transition: transform 200ms;
+    z-index: 10;
 
-    // big screen--- display: flex;
     .site-nav {
       &__list {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        font-size: 18px;
       }
+    }
+
+    .menu-item {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      padding-bottom: 1em;
+      margin-bottom: 1.5em;
+      &.i4{
+        margin-bottom: 0em;
+      }
+    }
+
+    &.on {
+      transform: translateX(-100%);
     }
   }
 }

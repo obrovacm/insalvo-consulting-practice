@@ -1,3 +1,8 @@
+html {
+  font-family: $font1;
+  color: $black-mat;
+}
+
 .underline {
   position: relative;
   text-transform: uppercase;
@@ -20,6 +25,16 @@
       transform: translateX(-50%);
     }
   }
+  &.nav-link {
+    &::after {
+      top: calc(100% - 0.5em);
+    }
+    margin-bottom: 1.5em;
+    text-align: left;
+    &:last-child {
+      margin-bottom: 0.5em;
+    }
+  }
 }
 
 .btn {
@@ -32,4 +47,8 @@
   color: $white;
   text-transform: uppercase;
   border: none;
+  transition: background-color 150ms;
+  &:hover {
+    background-color: $black-mat;
+  }
 }

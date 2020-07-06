@@ -3,15 +3,14 @@ html {
   font-size: 100%;
 }
 
-// body{
-//   overflow: hidden;
-// }
+body{
+  overflow-x: hidden;
+}
 
 *,
 *::before,
 *::after { 
   box-sizing: inherit;
-  font-family: Poppins;
 }
 
 /*--------------------------------------------------------------
