@@ -26,13 +26,14 @@
   ** Social links
   */
   &__social {
+    grid-area: social;
     .site-footer__logo-wrapper,
     p {
       margin-bottom: 28px;
     }
-    // .site-footer__logo-wrapper {
-    //   text-align: center;
-    // }
+    .site-footer__logo-wrapper {
+      text-align: center;
+    }
   }
   &__social-icons {
     display: flex;
@@ -46,7 +47,7 @@
     margin-right: 10px;
     border: 1px solid $gold;
     transition: border 200ms;
-    &:hover{
+    &:hover {
       border-width: 4px;
     }
     img {
@@ -69,6 +70,7 @@
   ** More links
   */
   &__links {
+    grid-area: links;
     ul {
       padding-left: 35px;
     }
@@ -99,6 +101,7 @@
   ** Our address
   */
   &__address {
+    grid-area: address;
     ul {
       padding-left: 35px;
     }
@@ -133,11 +136,38 @@
   ** Copyrights
   */
   &__copyrights {
+    grid-area: copyrights;
     padding: 18px 0;
     @include responsive-padding;
     background-color: $black-soft;
     color: $white;
     text-align: center;
     font-size: 14px;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 500px) {
+  .site-footer {
+    &__content {
+      display: grid;
+      grid-gap: 2em;
+      grid-template-areas:
+        "social social"
+        "links address"
+        "copyrights copyrights";
+        & > div {
+          margin-bottom: 0;
+        }
+    }
+    &__social {
+      justify-self: center;
+    }
+    &__links {
+      justify-self: center;
+    }
+    &__address {
+      justify-self: center;
+    }
   }
 }

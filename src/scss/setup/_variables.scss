@@ -44,15 +44,17 @@ $screen-padding-xlg: 0 calc((100vw - 1200px) / 2);
 }
 
 @mixin responsive-width {
-  @include lg-screen{
+  @include lg-screen {
     width: 1096px;
   }
-
-  
 }
 @mixin responsive-padding {
   padding-left: 1em;
   padding-right: 1em;
-  
-  
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }

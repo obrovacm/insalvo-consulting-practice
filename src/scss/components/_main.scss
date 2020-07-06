@@ -34,7 +34,10 @@
 
 .services {
   &__block {
-    padding-bottom: 0 !important;
+    // padding-bottom: 1em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__header {
     p {
@@ -45,11 +48,9 @@
     }
     margin-bottom: 45px;
   }
-
   &__card {
-    width: 100%;
-    // width: 260px;
     height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,18 +67,17 @@
       color: $white;
       font-weight: bold;
     }
-  }
-  &__content {
-    a:nth-child(1) div {
+
+    &:nth-child(1) {
       background-image: url(./images/service1.jpg);
     }
-    a:nth-child(2) div {
+    &:nth-child(2) {
       background-image: url(./images/service2.jpg);
     }
-    a:nth-child(3) div {
+    &:nth-child(3) {
       background-image: url(./images/service3.jpg);
     }
-    a:nth-child(4) div {
+    &:nth-child(4) {
       background-image: url(./images/service4.jpg);
       margin: 0;
     }
@@ -155,4 +155,45 @@
     width: 200px;
     height: 80px;
   }
+}
+
+@media (min-width: 436px) {
+  .clients {
+    &__block {
+      // margin: 0 auto;
+      text-align: center;
+    }
+    &__content {
+      display: inline-grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(2, 200px);
+      margin-top: 1em;
+    }
+  }
+}
+@media (min-width: 540px + 36px) {
+  .services {
+    &__content {
+      display: inline-grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(2, 260px);
+      margin: 0 auto;
+    }
+    &__card {
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 800px) {
+  // .services {
+  //   &__content {
+  //     display: inline-grid;
+  //     grid-gap: 1em;
+  //     grid-template-columns: repeat(2, 260px);
+  //     margin: 0 auto;
+  //   }
+  //   &__card {
+  //     margin: 0;
+  //   }
+  // }
 }
