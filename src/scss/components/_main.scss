@@ -56,19 +56,6 @@
     align-items: center;
     margin-bottom: 20px;
     background-size: cover;
-    &:nth-child(1) {
-      background-image: url(./images/service1.jpg);
-    }
-    &:nth-child(2) {
-      background-image: url(./images/service2.jpg);
-    }
-    &:nth-child(3) {
-      background-image: url(./images/service3.jpg);
-    }
-    &:nth-child(4) {
-      background-image: url(./images/service4.jpg);
-      margin: 0;
-    }
     img {
       height: 50px;
       margin-bottom: 37px;
@@ -78,6 +65,21 @@
       color: $grey-dark;
       color: $white;
       font-weight: bold;
+    }
+  }
+  &__content {
+    a:nth-child(1) div {
+      background-image: url(./images/service1.jpg);
+    }
+    a:nth-child(2) div {
+      background-image: url(./images/service2.jpg);
+    }
+    a:nth-child(3) div {
+      background-image: url(./images/service3.jpg);
+    }
+    a:nth-child(4) div {
+      background-image: url(./images/service4.jpg);
+      margin: 0;
     }
   }
 }

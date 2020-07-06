@@ -47,7 +47,7 @@ html {
   color: $white;
   text-transform: uppercase;
   border: none;
-  transition: background-color 150ms;
+  transition: background-color 150ms; 
   &:hover {
     background-color: $black-mat;
   }
