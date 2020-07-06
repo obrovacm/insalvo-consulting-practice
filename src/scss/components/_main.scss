@@ -185,15 +185,45 @@
   }
 }
 @media (min-width: 800px) {
-  // .services {
-  //   &__content {
-  //     display: inline-grid;
-  //     grid-gap: 1em;
-  //     grid-template-columns: repeat(2, 260px);
-  //     margin: 0 auto;
-  //   }
-  //   &__card {
-  //     margin: 0;
-  //   }
-  // }
+  .site-main {
+    h2 {
+      font-size: 30px;
+    }
+    & > div {
+      padding: 75px 0;
+      @include responsive-padding;
+    }
+  }
+  .intro {
+    &__block {
+      display: flex;
+      align-items: center;
+      height: 600px;
+    }
+    &__content h2 {
+      font-size: 45px;
+    }
+  }
 }
+
+@media (min-width: 1200px) {
+  .site-main {
+    h2 {
+      font-size: 36px;
+    }
+    & > div {
+      padding: 160px 0;
+      @include responsive-padding;
+    }
+  }
+  .intro {
+    &__block {
+      height: 800px;
+    }
+    &__content h2 {
+      font-size: 60px;
+    }
+  }
+}
+
+// MEDIUM - OUR STORY prikazati sliku
