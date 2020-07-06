@@ -73,3 +73,53 @@
     }
   }
 }
+
+.our-story{
+  &__block{
+    background-color: $grey-light2;
+  }
+  &__content{
+    h4, p{
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.testimonials {
+  &__block {
+    background-color: $black-softer;
+    color: $white;
+  }
+  &__content {
+    border: 1px solid $gold;
+    padding: 1em;
+    text-align: center;
+
+    h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 35px;
+    }
+  }
+}
+
+.clients {
+  // &__block{}
+  // &__header{}
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // flex-wrap: wrap;
+
+  }
+  &__img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+  }
+}

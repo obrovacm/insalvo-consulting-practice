@@ -3,13 +3,14 @@
   ** Quick contacts section 
   */
   &__quick-contacts {
-    background-color: $black-header;
-    color: $white;
     display: flex;
     justify-content: space-between;
     padding: 14px 0;
-    margin: 0 auto;
     @include responsive-padding;
+    margin: 0 auto;
+    background-color: $black-header;
+    color: $white;
+    font-size: 12px;
   }
 
   &__reachout {
@@ -21,8 +22,20 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
+    span {
+      text-align: right;
+      
+      &:nth-child(2) {
+        display: flex;
+        justify-self: right;
+        align-self: center;
+        img {
+          margin-left: 21px;
+        }
+      }
+    }
   }
-  
+
   /*
   ** Main header section 
   */
@@ -34,6 +47,10 @@
     padding: 22px 0;
     @include responsive-padding;
     overflow: hidden;
+  }
+
+  &__branding img {
+    width: calc(100% - 2em);
   }
 
   /*
