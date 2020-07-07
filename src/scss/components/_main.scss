@@ -84,7 +84,33 @@
 
 .our-story {
   &__block {
+    position: relative;
+    z-index: 1;
     background-color: $grey-light2;
+    display: flex;
+    align-items: center;
+  }
+  &__ilustration {
+    position: relative;
+    display: none;
+    background-image: url(./images/man-looks-at-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 320px;
+    min-height: 352px;
+    width: 100%;
+    margin-right: 115px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 26px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $gold;
+      z-index: -1;
+    }
   }
   &__content {
     h4 {
@@ -111,7 +137,7 @@
   }
   &__content {
     border: 1px solid $gold;
-    padding: 1em;
+    padding: 2em;
     text-align: center;
 
     h4 {
@@ -202,6 +228,11 @@
   .services__content {
     grid-gap: 2em;
   }
+  .our-story {
+    &__ilustration {
+      display: block;
+    }
+  }
   .clients {
     &__content {
       margin-top: 80px;
@@ -245,6 +276,12 @@
       text-align: center;
     }
   }
+  .our-story {
+    &__ilustration {
+      min-width: 445px;
+      height: 490px;      
+    }
+  }
   .clients {
     &__content {
       margin-top: 115px;
@@ -253,4 +290,4 @@
   }
 }
 
-// MEDIUM - OUR STORY prikazati sliku i nav padajuci meni
+// nav padajuci meni
