@@ -127,6 +127,25 @@
       &.i4 {
         margin-bottom: 0em;
       }
+      &.i2 {
+        padding-right: 20px;
+        position: relative;
+        .drop-arrow {
+          position: absolute;
+          left: 164px;
+          top: 50%;
+          width: 8px;
+          height: 8px;
+          border-left: 2px solid $black-mat;
+          border-bottom: 2px solid $black-mat;
+          transition: border-color 200ms;
+          transform: rotate(-45deg) translateY(-20px);
+          margin: 0;
+        }
+        &:hover .drop-arrow {
+          border-color: $gold;
+        }
+      }
     }
     a:hover .menu-item {
       color: $gold;
@@ -175,6 +194,15 @@
         padding: 1em 0;
         margin: 0;
         margin-left: 1.5em;
+
+        &.i2 {
+          padding-right: 20px;
+          position: relative;
+          .drop-arrow {
+            left: 160px;
+            transform: rotate(-45deg) translateY(-100%);
+          }
+        }
       }
       .underline.nav-link {
         text-align: center;
