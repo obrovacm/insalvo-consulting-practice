@@ -106,6 +106,7 @@
     left: 100%;
     width: 100%;
     padding: 1em;
+    @include responsive-padding;
     transition: transform 200ms;
     z-index: 10;
 
@@ -116,7 +117,6 @@
         justify-content: space-between;
       }
     }
-
     .menu-item {
       text-transform: uppercase;
       font-weight: 500;
@@ -131,7 +131,6 @@
     a:hover .menu-item {
       color: $gold;
     }
-
     &.on {
       transform: translateX(-100%);
     }
@@ -152,6 +151,38 @@
 
     &__branding img {
       width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header {
+    &__hamburger {
+      display: none;
+    }
+    &__nav {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0;
+      width: auto;
+
+      .site-nav__list {
+        width: auto;
+        flex-direction: row;
+      }
+      .menu-item {
+        padding: 1em 0;
+        margin: 0;
+        margin-left: 1.5em;
+      }
+      .underline.nav-link {
+        text-align: center;
+        &::after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     }
   }
 }

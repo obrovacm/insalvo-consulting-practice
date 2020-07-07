@@ -1,6 +1,4 @@
 .site-content {
-  // height: 100px;
-  // background-color: $blue-baby;
   width: 100%;
 }
 
@@ -145,8 +143,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    // flex-wrap: wrap;
   }
   &__img-wrapper {
     display: flex;
@@ -160,7 +156,6 @@
 @media (min-width: 436px) {
   .clients {
     &__block {
-      // margin: 0 auto;
       text-align: center;
     }
     &__content {
@@ -204,6 +199,15 @@
       font-size: 45px;
     }
   }
+  .services__content {
+    grid-gap: 2em;
+  }
+  .clients {
+    &__content {
+      margin-top: 80px;
+      grid-gap: 4em;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -224,6 +228,29 @@
       font-size: 60px;
     }
   }
+
+  .services {
+    &__header {
+      margin-bottom: 115px;
+    }
+    &__content {
+      grid-gap: calc((1094px - 260px * 4) / 3);
+      grid-template-columns: repeat(4, 260px);
+    }
+  }
+
+  .testimonials {
+    &__content {
+      padding: 4em 150px;
+      text-align: center;
+    }
+  }
+  .clients {
+    &__content {
+      margin-top: 115px;
+      grid-template-columns: repeat(4, 200px);
+    }
+  }
 }
 
-// MEDIUM - OUR STORY prikazati sliku
+// MEDIUM - OUR STORY prikazati sliku i nav padajuci meni

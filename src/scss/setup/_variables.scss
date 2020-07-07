@@ -1,6 +1,5 @@
 $gold: #af943e;
 $blue-baby: #5ed9e7;
-
 $white: #fff;
 $grey-light: #f6f6f6;
 $grey-light2: #f3f4f5;
@@ -15,43 +14,9 @@ $black: #000000;
 $font1: Poppins;
 $font2: Merriweather;
 
-$screen-padding-xs: 0 1em;
-$screen-padding-sm: 0 3em;
-$screen-padding-xlg: 0 calc((100vw - 1200px) / 2);
-
-@mixin sm-screen {
-  @media (min-width: 420px) {
-    @content;
-  }
-}
-
-@mixin md-screen {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
-// @mixin lg-screen {
-//   @media (min-width: 850px) {
-//     @content;
-//   }
-// }
-
-@mixin lg-screen {
-  @media (min-width: calc(1096px + 1em)) {
-    @content;
-  }
-}
-
-@mixin responsive-width {
-  @include lg-screen {
-    width: 1096px;
-  }
-}
 @mixin responsive-padding {
   padding-left: 12px;
   padding-right: 12px;
-  margin: 0 auto;
 
   @media (min-width: 600px) {
     padding-left: 24px;
@@ -62,4 +27,8 @@ $screen-padding-xlg: 0 calc((100vw - 1200px) / 2);
     padding-left: 48px;
     padding-right: 48px;
   }
+  @media (min-width: 1200px) {
+    padding-left: calc((100vw - (1094px + 15px)) / 2);
+    padding-right: calc((100vw - (1094px + 15px)) / 2);
+  } // 15px zbog scrolla?
 }

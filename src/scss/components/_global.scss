@@ -28,12 +28,10 @@ html {
   &.nav-link {
     &::after {
       top: calc(100% - 0.5em);
+      left: 0;
     }
     margin-bottom: 1.5em;
     text-align: left;
-    &:last-child {
-      margin-bottom: 0.5em;
-    }
   }
 }
 
