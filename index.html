@@ -33,235 +33,242 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <!-- header QUICK-CONTACTS -->
-      <div class="site-header__quick-contacts">
-        <div class="site-header__reachout">
-          <span
-            ><img src="./dist/images/phone.png" alt="phone" /> 1-333-4896</span
-          >
-          <span
-            ><img src="./dist/images/mail.png" alt="mail" />
-            info@insalvo.com</span
-          >
-        </div>
-        <div class="site-header__social">
-          <span>Follow us</span>
-          <span>
-            <a href="#">
-              <img src="./dist/images/twitter.png" alt="twitter" />
-            </a>
-            <a href="#">
-              <img src="./dist/images/fb.png" alt="facebook" />
-            </a>
-            <a href="#">
-              <img src="./dist/images/linkedin.png" alt="linkedin" />
-            </a>
-          </span>
-        </div>
-      </div>
-
-      <!-- header MAIN -->
-      <div class="site-header__main">
-        <div class="site-header__branding">
-          <a href="#" class="site-header__logo">
-            <img src="./dist/images/logo.png" alt="company logo" />
-          </a>
-        </div>
-
-        <!-- HAMBURGER -->
-        <div id="hamburger" class="site-header__hamburger">
-          <div class="hamburger">
-            <span class="hamburger__line l1"></span>
-            <span class="hamburger__line l2"></span>
-            <span class="hamburger__line l3"></span>
+    <div class="app">
+      <header class="site-header">
+        <!-- header QUICK-CONTACTS -->
+        <div class="site-header__quick-contacts">
+          <div class="site-header__reachout">
+            <span
+              ><img src="./dist/images/phone.png" alt="phone" />
+              1-333-4896</span
+            >
+            <span
+              ><img src="./dist/images/mail.png" alt="mail" />
+              info@insalvo.com</span
+            >
+          </div>
+          <div class="site-header__social">
+            <span>Follow us</span>
+            <span>
+              <a href="#">
+                <img src="./dist/images/twitter.png" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="./dist/images/fb.png" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="./dist/images/linkedin.png" alt="linkedin" />
+              </a>
+            </span>
           </div>
         </div>
 
-        <!-- NAV-BAR -->
-        <div id="nav" class="site-header__nav">
-          <nav class="site-nav" id="site-nav">
-            <ul class="site-nav__list">
-              <a href="#"
-                ><li class="menu-item i1 underline nav-link">Start</li></a
-              >
-              <a href="#"><li class="menu-item i2">Dienstleistungen <div class="drop-arrow"></div></li></a>
-              <a href="#"><li class="menu-item i3">Über uns</li></a>
-              <a href="#"><li class="menu-item i4">Kontakt</li></a>
+        <!-- header MAIN -->
+        <div class="site-header__main">
+          <div class="site-header__branding">
+            <a href="#" class="site-header__logo">
+              <img src="./dist/images/logo.png" alt="company logo" />
+            </a>
+          </div>
+
+          <!-- HAMBURGER -->
+          <div id="hamburger" class="site-header__hamburger">
+            <div class="hamburger">
+              <span class="hamburger__line l1"></span>
+              <span class="hamburger__line l2"></span>
+              <span class="hamburger__line l3"></span>
+            </div>
+          </div>
+
+          <!-- NAV-BAR -->
+          <div id="nav" class="site-header__nav">
+            <nav class="site-nav" id="site-nav">
+              <ul class="site-nav__list">
+                <a href="#"
+                  ><li class="menu-item i1 underline nav-link">Start</li></a
+                >
+                <a href="#"
+                  ><li class="menu-item i2">
+                    Dienstleistungen
+                    <div class="drop-arrow"></div></li
+                ></a>
+                <a href="#"><li class="menu-item i3">Über uns</li></a>
+                <a href="#"><li class="menu-item i4">Kontakt</li></a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- main CONTENT -->
+      <div id="content" class="site-content">
+        <main id="main" class="site-main">
+          <!-- Intro -->
+          <div class="intro__block">
+            <div class="intro__content">
+              <h2 class="underline left">insalvo consulting</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh
+              </p>
+              <button class="btn">read more</button>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="services__block">
+            <div class="services__header">
+              <h2 class="underline center">our services</h2>
+              <p>This is what we can offer you</p>
+            </div>
+            <div class="services__content">
+              <div class="services__card">
+                <img src="./dist/images/suitcase.png" alt="souitcase" />
+                <a href="#"> <p>Versicherungen</p></a>
+              </div>
+              <div class="services__card">
+                <img src="./dist/images/insurance.png" alt="insurance" />
+                <a href="#"> <p>Privatversicherungen</p></a>
+              </div>
+              <div class="services__card">
+                <img src="./dist/images/finances.png" alt="finance" />
+                <a href="#"> <p>Finanzen</p></a>
+              </div>
+              <div class="services__card">
+                <img src="./dist/images/paper-scroll.png" alt="paper" />
+                <a href="#"> <p>Treuhand</p></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our story -->
+          <div class="our-story__block">
+            <div class="our-story__ilustration"></div>
+            <div class="our-story__content">
+              <h2 class="underline left">our story</h2>
+              <h4>We made this so you can present your buisness.</h4>
+              <p>
+                Mirum est notare quam littera gothica, quam nunc putamus parum
+                claram, anteposuerit litterarum formas humanitatis per seacula
+                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis
+                videntur parum clari, fiant sollemnes in futurum.
+              </p>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonials -->
+          <div class="testimonials__block">
+            <div class="testimonials__content">
+              <h2 class="underline center">testimonials</h2>
+              <p>
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolorum culpa voluptatibus, ipsa aliquam ratione natus
+                inventore! Culpa, explicabo."
+              </p>
+              <h4>sam jackson</h4>
+            </div>
+          </div>
+
+          <!-- Clients -->
+          <div class="clients__block">
+            <div class="clients__header">
+              <h2 class="underline center">the clients</h2>
+              <p>We were happy to work with them</p>
+            </div>
+            <div class="clients__content">
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c1.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c2.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c3.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c4.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c5.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c6.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c7.png" alt="client logo" />
+              </div>
+              <div class="clients__img-wrapper">
+                <img src="./dist/images/c8.png" alt="client logo" />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__content">
+          <div class="site-footer__social">
+            <div class="site-footer__logo-wrapper">
+              <a href="#" class="site-footer__logo">
+                <img src="./dist/images/logo-white.png" alt="company logo" />
+              </a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia
+              dicta veniam eos suscipit molestias tempore possimus quasi
+              assumenda eveniet aliquam quo sunt natus architecto quis quos,
+              perferendis earum nisi.
+            </p>
+            <div class="site-footer__social-icons">
+              <a href="#" class="site-footer__social-icon facebook">
+                <div class="site-footer__social-icon-wrapper">
+                  <img src="./dist/images/fb.png" alt="facebook icon" />
+                </div>
+              </a>
+              <a href="#" class="site-footer__social-icon twitter">
+                <div class="site-footer__social-icon-wrapper">
+                  <img src="./dist/images/twitter.png" alt="twitter icon" />
+                </div>
+              </a>
+              <a href="#" class="site-footer__social-icon pintrest">
+                <div class="site-footer__social-icon-wrapper">
+                  <img src="./dist/images/pintrest.png" alt="pintrest icon" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="site-footer__links">
+            <h4 class="site-footer__header underline left">more links</h4>
+            <ul>
+              <a href="#" class="site-footer__links"><li>Home</li></a>
+              <a href="#" class="site-footer__links"><li>About Us</li></a>
+              <a href="#" class="site-footer__links"><li>Our Services</li></a>
+              <a href="#" class="site-footer__links"><li>Contact Us</li></a>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- main CONTENT -->
-    <div id="content" class="site-content">
-      <main id="main" class="site-main">
-        <!-- Intro -->
-        <div class="intro__block">
-          <div class="intro__content">
-            <h2 class="underline left">insalvo consulting</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh
-            </p>
-            <button class="btn">read more</button>
+          </div>
+          <div class="site-footer__address">
+            <h4 class="site-footer__header underline left">Our Address</h4>
+            <ul>
+              <li>Insolvo-Consulting</li>
+              <li class="address__house">Weissensteinstrasse 26</li>
+              <li>3008 Bern</li>
+              <li class="address__phone">Tel: 076 409 91 91</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Services -->
-        <div class="services__block">
-          <div class="services__header">
-            <h2 class="underline center">our services</h2>
-            <p>This is what we can offer you</p>
-          </div>
-          <div class="services__content">
-            <div class="services__card">
-              <img src="./dist/images/suitcase.png" alt="souitcase" />
-              <a href="#"> <p>Versicherungen</p></a>
-            </div>
-            <div class="services__card">
-              <img src="./dist/images/insurance.png" alt="insurance" />
-              <a href="#"> <p>Privatversicherungen</p></a>
-            </div>
-            <div class="services__card">
-              <img src="./dist/images/finances.png" alt="finance" />
-              <a href="#"> <p>Finanzen</p></a>
-            </div>
-            <div class="services__card">
-              <img src="./dist/images/paper-scroll.png" alt="paper" />
-              <a href="#"> <p>Treuhand</p></a>
-            </div>
-          </div>
+        <div class="site-footer__copyrights">
+          <span>&#169; Copyright Insolvo Consulting. All rights reserved</span>
         </div>
-
-        <!-- Our story -->
-        <div class="our-story__block">
-          <div class="our-story__ilustration"></div>
-          <div class="our-story__content">
-            <h2 class="underline left">our story</h2>
-            <h4>We made this so you can present your buisness.</h4>
-            <p>
-              Mirum est notare quam littera gothica, quam nunc putamus parum
-              claram, anteposuerit litterarum formas humanitatis per seacula
-              quarta decima et quinta decima. Eodem modo typi, qui nunc nobis
-              videntur parum clari, fiant sollemnes in futurum.
-            </p>
-            <p>
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-              esse molestie consequat, vel illum dolore eu feugiat nulla
-              facilisis at vero eros et accumsan et iusto odio dignissim qui
-              blandit.
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonials -->
-        <div class="testimonials__block">
-          <div class="testimonials__content">
-            <h2 class="underline center">testimonials</h2>
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-              culpa voluptatibus, ipsa aliquam ratione natus inventore! Culpa,
-              explicabo."
-            </p>
-            <h4>sam jackson</h4>
-          </div>
-        </div>
-
-        <!-- Clients -->
-        <div class="clients__block">
-          <div class="clients__header">
-            <h2 class="underline center">the clients</h2>
-            <p>We were happy to work with them</p>
-          </div>
-          <div class="clients__content">
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c1.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c2.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c3.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c4.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c5.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c6.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c7.png" alt="client logo" />
-            </div>
-            <div class="clients__img-wrapper">
-              <img src="./dist/images/c8.png" alt="client logo" />
-            </div>
-          </div>
-        </div>
-      </main>
+      </footer>
     </div>
-
-    <footer class="site-footer">
-      <div class="site-footer__content">
-        <div class="site-footer__social">
-          <div class="site-footer__logo-wrapper">
-            <a href="#" class="site-footer__logo">
-              <img src="./dist/images/logo-white.png" alt="company logo" />
-            </a>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia
-            dicta veniam eos suscipit molestias tempore possimus quasi assumenda
-            eveniet aliquam quo sunt natus architecto quis quos, perferendis
-            earum nisi.
-          </p>
-          <div class="site-footer__social-icons">
-            <a href="#" class="site-footer__social-icon facebook">
-              <div class="site-footer__social-icon-wrapper">
-                <img src="./dist/images/fb.png" alt="facebook icon" />
-              </div>
-            </a>
-            <a href="#" class="site-footer__social-icon twitter">
-              <div class="site-footer__social-icon-wrapper">
-                <img src="./dist/images/twitter.png" alt="twitter icon" />
-              </div>
-            </a>
-            <a href="#" class="site-footer__social-icon pintrest">
-              <div class="site-footer__social-icon-wrapper">
-                <img src="./dist/images/pintrest.png" alt="pintrest icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="site-footer__links">
-          <h4 class="site-footer__header underline left">more links</h4>
-          <ul>
-            <a href="#" class="site-footer__links"><li>Home</li></a>
-            <a href="#" class="site-footer__links"><li>About Us</li></a>
-            <a href="#" class="site-footer__links"><li>Our Services</li></a>
-            <a href="#" class="site-footer__links"><li>Contact Us</li></a>
-          </ul>
-        </div>
-        <div class="site-footer__address">
-          <h4 class="site-footer__header underline left">Our Address</h4>
-          <ul>
-            <li>Insolvo-Consulting</li>
-            <li class="address__house">Weissensteinstrasse 26</li>
-            <li>3008 Bern</li>
-            <li class="address__phone">Tel: 076 409 91 91</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="site-footer__copyrights">
-        <span>&#169; Copyright Insolvo Consulting. All rights reserved</span>
-      </div>
-    </footer>
 
     <!-- JavaScript File -->
     <script src="./dist/all.js?cb=1594103422303"></script>
