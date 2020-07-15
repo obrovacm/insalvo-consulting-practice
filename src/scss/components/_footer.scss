@@ -4,7 +4,7 @@
   background-color: $black-softer;
   color: $grey;
   font-size: 14px;
-
+ 
   /*
   ** CONTENT
   */
@@ -121,17 +121,17 @@
         background-repeat: no-repeat;
       }
       &.address__house::before {
-        background-image: url(./images/house.png);
+        background-image: url(../images/house.png);
       }
       &.address__phone::before {
-        background-image: url(./images/phone.png);
+        background-image: url(../images/phone.png);
       }
       &:hover {
         color: $white;
       }
     }
   }
-
+ 
   /*
   ** Copyrights
   */

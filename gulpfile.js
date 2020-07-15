@@ -8,7 +8,8 @@ const replace = require("gulp-replace");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const uglify = require("gulp-uglify");
-
+ 
+const destFolder = "dist";
 // File paths
 const files = {
   scssPath: "src/scss/**/*.scss",
@@ -22,7 +23,7 @@ function scssTask() {
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano]))
     .pipe(sourcemaps.write("."))
-    .pipe(dest("dist"));
+    .pipe(dest(destFolder + "/css"));
 }
 
 // JS task
@@ -30,7 +31,7 @@ function jsTask() {
   return src(files.jsPath)
     .pipe(concat("all.js"))
     .pipe(uglify())
-    .pipe(dest("dist"));
+    .pipe(dest(destFolder + "/js"));
 }
 
 // Cachebusting task

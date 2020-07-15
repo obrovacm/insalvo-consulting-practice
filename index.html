@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <!-- General meta tags needed-->
+    <!-- General meta tags-->
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Needed for responsive design -->
@@ -9,27 +9,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- If you want custom browser colors on mobile -->
+    <!-- Custom browser colors on mobile -->
     <meta name="theme-color" content="#333333" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#333333" />
 
-    <title>Insalvo Consulting</title>
-
-    <!-- Google Fonts -->
+    <title>Insalvo Consulting</title> 
+    <!-- CSS Files -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
+      href="./dist/css/bootstrap__grid-responsivess.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather"
-      rel="stylesheet"
-    />
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="./dist/styles.css?cb=1594103422303" />
-
-    <!-- jQuery -->
-    <script src="./dist/jquery.js"></script>
+    <link rel="stylesheet" href="./dist/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./dist/css/styles.css?cb=1594103422303" />
   </head>
 
   <body>
@@ -52,6 +43,7 @@
             <span>
               <a href="#">
                 <img src="./dist/images/twitter.png" alt="twitter" />
+                <!-- <i class="fa fa-twitter icon-x3"></i> -->
               </a>
               <a href="#">
                 <img src="./dist/images/fb.png" alt="facebook" />
@@ -104,19 +96,21 @@
       <div id="content" class="site-content">
         <main id="main" class="site-main">
           <!-- Intro -->
-          <div class="intro__block">
+          <section class="intro__block">
             <div class="intro__content">
               <h2 class="underline left">insalvo consulting</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+                nam facere aspernatur possimus a aperiam temporibus, sed esse
+                consectetur vel veritatis ex vitae, ad iste at fugiat quia? Qui,
+                et!
               </p>
               <button class="btn">read more</button>
             </div>
-          </div>
+          </section>
 
           <!-- Services -->
-          <div class="services__block">
+          <section class="services__block">
             <div class="services__header">
               <h2 class="underline center">our services</h2>
               <p>This is what we can offer you</p>
@@ -139,10 +133,10 @@
                 <a href="#"> <p>Treuhand</p></a>
               </div>
             </div>
-          </div>
+          </section>
 
           <!-- Our story -->
-          <div class="our-story__block">
+          <section class="our-story__block">
             <div class="our-story__ilustration"></div>
             <div class="our-story__content">
               <h2 class="underline left">our story</h2>
@@ -160,10 +154,10 @@
                 blandit.
               </p>
             </div>
-          </div>
+          </section>
 
           <!-- Testimonials -->
-          <div class="testimonials__block">
+          <section class="testimonials__block">
             <div class="testimonials__content">
               <h2 class="underline center">testimonials</h2>
               <p>
@@ -173,10 +167,10 @@
               </p>
               <h4>sam jackson</h4>
             </div>
-          </div>
+          </section>
 
           <!-- Clients -->
-          <div class="clients__block">
+          <section class="clients__block">
             <div class="clients__header">
               <h2 class="underline center">the clients</h2>
               <p>We were happy to work with them</p>
@@ -207,7 +201,7 @@
                 <img src="./dist/images/c8.png" alt="client logo" />
               </div>
             </div>
-          </div>
+          </section>
         </main>
       </div>
 
@@ -270,7 +264,8 @@
       </footer>
     </div>
 
-    <!-- JavaScript File -->
-    <script src="./dist/all.js?cb=1594103422303"></script>
+    <!-- JavaScript files -->
+    <script src="./dist/js/jquery.js"></script>
+    <script src="./dist/js/all.js?cb=1594103422303"></script>
   </body>
 </html>

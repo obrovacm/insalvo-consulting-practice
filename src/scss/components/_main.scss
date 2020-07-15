@@ -3,7 +3,7 @@
 }
 
 .site-main {
-  & > div {
+  & > section {
     padding: 45px 0;
     @include responsive-padding;
   }
@@ -14,7 +14,7 @@
 
 .intro {
   &__block {
-    background-image: url(./images/intro-pic.jpg);
+    background-image: url(../images/intro-pic.jpg);
     background-position: 75% 0;
     background-size: cover;
   }
@@ -64,19 +64,19 @@
       color: $grey-dark;
       color: $white;
       font-weight: bold;
-    }
+    } 
 
     &:nth-child(1) {
-      background-image: url(./images/service1.jpg);
-    }
+      background-image: url(../images/service1.jpg);
+    } 
     &:nth-child(2) {
-      background-image: url(./images/service2.jpg);
+      background-image: url(../images/service2.jpg);
     }
     &:nth-child(3) {
-      background-image: url(./images/service3.jpg);
+      background-image: url(../images/service3.jpg);
     }
     &:nth-child(4) {
-      background-image: url(./images/service4.jpg);
+      background-image: url(../images/service4.jpg);
       margin: 0;
     }
   }
@@ -93,7 +93,7 @@
   &__ilustration {
     position: relative;
     display: none;
-    background-image: url(./images/man-looks-at-tablet.jpg);
+    background-image: url(../images/man-looks-at-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
